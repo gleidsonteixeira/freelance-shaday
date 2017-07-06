@@ -109,6 +109,7 @@ main .retangulo .bg{
     position: absolute;
     top: 0;
     left: 0;
+    background-color: #000;
 }
 main .quadrado:hover .bg,
 main .retangulo:hover .bg{
@@ -120,6 +121,7 @@ main .retangulo:hover .bg{
 }
 main .quadrado .bg img,
 main .retangulo .bg img{
+    opacity: 0.8;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -128,6 +130,15 @@ main .retangulo .bg img{
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+main .quadrado .bg:hover img,
+main .retangulo .bg:hover img{
+    opacity: 1;
 }
 main .quadrado title,
 main .retangulo title{
@@ -143,6 +154,11 @@ main .retangulo title{
     letter-spacing: 2px;
     color: white;
     font-weight: bold;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(90deg, rgba(0,0,0,0.8), transparent);
+    background-image: -moz-linear-gradient(90deg, rgba(0,0,0,0.8), transparent);
+    background-image: -ms-linear-gradient(90deg, rgba(0,0,0,0.8), transparent);
+    background-image: -o-linear-gradient(90deg, rgba(0,0,0,0.8), transparent);
 }
 main .retangulo{
     width: 100%;
