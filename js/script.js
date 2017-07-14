@@ -39,11 +39,11 @@ function showVideo(){
     $(".video-container i").click(function(){
         var a = $(this).attr("data-url");
         $("#video").addClass("active");
-        $("#video iframe").attr("src", a);
+        $("#video .frame").html('<iframe width="800" height="450" src="'+a+'" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>')
     })
 
     $("#video i").click(function(){
         $(this).offsetParent().removeClass("active");
-        $("#video iframe").attr("src", );
+        $("#video .frame").html("");
     })
 }
